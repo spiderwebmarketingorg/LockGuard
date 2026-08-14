@@ -13,7 +13,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  
+}
+
+.nunito-font {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 body {
@@ -41,7 +48,7 @@ body {
 .btn-call {
   background-color: #52b788;
   color: #ffffff;
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-align: center;
   display: flex;
   align-items: center;
@@ -50,10 +57,17 @@ body {
   border-radius: var(--radius);
   padding: 5px 0px;
   width: 18vh;
+  border: none;
+  outline: none;
   font-weight: 500;
 
   /* Animation properties */
   animation: phoneShake 3s infinite ease-in-out;
+}
+
+.btn-call:focus{
+  border: none;
+  outline: none;
 }
 
 /* 2. Define the keyframes */
@@ -74,8 +88,9 @@ body {
 }
 
 .call-icon {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
+  padding-right: 1px;
   
 }
 
@@ -91,8 +106,16 @@ body {
 
 .logo {
   font-weight: 800;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #081c15;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+.lock-logo{
+  width: 40px;
+  height: 40px;
 }
 
 .status-badge {
@@ -151,9 +174,14 @@ body {
 .btn-primary {
   background-color: #52b788;
   color: #ffffff;
+  border: none;
 }
 
+.btn-primary:hover{
+  transform: scale(95%);
+}
 
+ 
 
 /* Services */
 
@@ -170,7 +198,7 @@ body {
 
 .services h1 {
   font-size: 1.4rem;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   text-align: center;
   color: #081c15
 }
@@ -196,6 +224,77 @@ body {
   color: var(--text-muted);
 }
 
+.devon-map{
+  width: 180x;
+  height: 180px;
+  margin-bottom: 50px;
+}
+
+.map-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-flow: column;
+  margin-bottom: 50px;
+}
+
+.map-title{
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 1.4rem;
+  color: #081c15;
+}
+
+.map-content{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.map-text{
+  background: #ffffff;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  border: 1px solid #52b7886f;
+  height: 210px;
+  padding: 5px;
+  margin-left: 25px;
+  margin-bottom: 50px;
+  
+}
+
+.map-txt{
+  color: #081c15;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.map-txt-title-b{
+  color: #081c15;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-align: start;
+  padding-left: 1px;  
+
+}
+
+.map-txt-b{
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  text-align: start;
+  padding-left: 1px;
+  margin-bottom: 5px;
+
+}
+
+
+.map-icon{
+  width: 32px;
+  height: 32px;
+}
+
 /* -- ABOUT US -- SECTION */
 
 
@@ -203,6 +302,14 @@ body {
   display: flex;
   flex-flow: column;
   align-items: center;
+}
+
+
+.about-us{
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 1.6rem;
+
 }
 
 
@@ -241,6 +348,7 @@ body {
   display: flex;
   flex-flow: column;
   justify-content: center;
+  align-items: start;
   padding: 20px;
   border-radius: var(--radius);
   width: 90%;
@@ -248,6 +356,19 @@ body {
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
   border: 1px solid #52b7886f;
   margin-bottom: 5px;
+}
+
+.bottom-card-l{
+  padding-top: 50px;
+}
+
+.about-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  border: none;
+  margin-bottom: 20px;
 }
 
 .hidden {
@@ -291,15 +412,18 @@ footer {
 
   .more-details{
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
+    justify-content: center;
     padding-top: 30px;
+    margin-bottom: 150px;
     
   }
 
 
   .service-card-bottom{
-    width: 50%;
+    width: 25%;
     margin-bottom: 20px;
+    margin: 10px;
   }
 
   .call-icon{
@@ -309,4 +433,59 @@ footer {
   .btn-call{
     width: 15 vh;
   }
+
+  .logo{
+    font-size: 1.7rem;
+  }
+  .devon-map{
+    margin-right: 350px;
+    width: 350px;
+    height: 300px;
+  }
+
+  .map-title{
+    margin-bottom: 100px;
+  }
+
+  .map-text{
+    transform: translateX(-100px);
+    width: 300px;
+    height: 300px
+  }
+
+  .map-txt{
+    font-size: 1rem;
+    margin-top: 5px;
+    
+  }
+
+  .map-txt-title-b{
+    font-size: 1rem;
+    margin-top: 25px;
+    padding-left: 5px;
+  }
+
+
+  .map-txt-b{
+    font-size: 0.9rem;
+    margin-top: 5px;
+    padding-left: 5px;
+  }
+
+  .map-icon{
+  width: 56px;
+  height: 56px;
+  padding-right: 15px;
+  }
+
+  .about-title{
+    margin-top: 100px;
+  }
+
+  .lock-logo{
+  width: 48px;
+  height: 48px;
+  }
+
+
 }
