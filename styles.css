@@ -59,7 +59,7 @@ body {
   width: 15vh;
   border: none;
   outline: none;
-  font-weight: 500;
+  font-weight: 600;
 
   /* Animation properties */
   animation: phoneShake 3s infinite ease-in-out;
@@ -137,12 +137,14 @@ body {
 .hero h1 {
   font-size: 1.75rem;
   color: #081c15;
+  font-weight: 800;
 }
 
 .hero h2 {
   font-size: 1.6rem;
   color: #081c15;
   margin-bottom: 12px;
+  font-weight: 800;
 }
 
 .hero p {
@@ -181,6 +183,8 @@ body {
   transform: scale(95%);
 }
 
+.btn-call
+
  
 
 /* Services */
@@ -200,7 +204,8 @@ body {
   font-size: 1.4rem;
   margin-bottom: 50px;
   text-align: center;
-  color: #081c15
+  color: #081c15;
+  font-weight: 800;
 }
 
 .service-card {
@@ -217,12 +222,15 @@ body {
   font-size: 1.1rem;
   margin-bottom: 8px;
   color: #081c15;
+  font-weight: 800;
 }
 
 .service-card p {
   font-size: 0.9rem;
   color: var(--text-muted);
 }
+
+
 
 .devon-map{
   width: 180x;
@@ -244,6 +252,7 @@ body {
   margin-bottom: 50px;
   font-size: 1.4rem;
   color: #081c15;
+  font-weight: 800;
 }
 
 .map-content{
@@ -257,7 +266,8 @@ body {
   border-radius: var(--radius);
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
   border: 1px solid #52b7886f;
-  height: 210px;
+  height: 200px;
+  width: 190px;
   padding: 5px;
   margin-left: 25px;
   margin-bottom: 50px;
@@ -267,7 +277,7 @@ body {
 .map-txt{
   color: #081c15;
   font-size: 0.8rem;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -309,6 +319,7 @@ body {
   margin-bottom: 30px;
   text-align: center;
   font-size: 1.6rem;
+  font-weight: 800;
 
 }
 
@@ -433,15 +444,24 @@ footer {
 
   .btn-call{
     width: 15 vh;
+    font-weight: 600;
   }
+
 
   .logo{
     font-size: 1.7rem;
   }
+
   .devon-map{
-    margin-right: 350px;
+    margin-right: 50px;
     width: 350px;
     height: 300px;
+  }
+
+  .map-content{
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
   }
 
   .map-title{
@@ -451,12 +471,13 @@ footer {
   .map-text{
     transform: translateX(-100px);
     width: 300px;
-    height: 300px
+    height: 300px;
+
   }
 
   .map-txt{
     font-size: 1rem;
-    margin-top: 5px;
+    margin-top: 15px;
     
   }
 
@@ -469,7 +490,7 @@ footer {
 
   .map-txt-b{
     font-size: 0.9rem;
-    margin-top: 5px;
+    margin-top: 25px;
     padding-left: 5px;
   }
 
