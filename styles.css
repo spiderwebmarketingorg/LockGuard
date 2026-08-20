@@ -236,6 +236,7 @@ body {
   width: 180x;
   height: 180px;
   margin-bottom: 50px;
+  width: 50%;
 }
 
 .map-box{
@@ -256,6 +257,7 @@ body {
 }
 
 .map-content{
+  width: 100%;
   display: flex;
   flex-flow: row;
   justify-content: center;
@@ -267,7 +269,7 @@ body {
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
   border: 1px solid #52b7886f;
   height: 200px;
-  width: 190px;
+  width: 50%;
   padding: 5px;
   margin-left: 25px;
   margin-bottom: 50px;
